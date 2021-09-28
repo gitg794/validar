@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>F_validar</title>
+</head>
+<body>
+    <form id="validacionForm">
+        <label for="">Introduzca solo Letra. Maximo 35 caracteres</label>
+        <br>
+        <input type="text" id="letras" onkeyup="validar()" onblur="validar()">
+
+        <!-- div que nos muestra el error -->
+        <div id="mensaje" hidden>
+            Introduzca solo letras (A-Z) o (a-z). Maximo 35 caracteres.
+        </div>
+        <br>
+        <br>
+        <button type="button" onclick="verificar()">Validar</button>
+    </form><br>
+
+    <!-- ////////////////////////////////////////////////////// -->
+    <h1>Primera letra Mayuscul</h1>
+    <!-- primera letra mayuscula -->
+    <label for="primera_L">Nombre
+        <input type="text" id="primera_L">
+    </label>
+
+    <button onclick="Mayuscula()">convertir</button>
+
+    <h3 id="modificado"></h3>
+
+    <!-- //////////////////////////////////////////////////////// -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
